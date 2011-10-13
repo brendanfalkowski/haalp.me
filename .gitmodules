@@ -1,0 +1,3 @@
+[submodule "app/webroot/js/jquery-timeago"]
+	path = app/webroot/js/jquery-timeago
+	url = https://github.com/rmm5t/jquery-timeago.git
