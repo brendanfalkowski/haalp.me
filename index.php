@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	
 	<link rel="stylesheet" media="screen" href="core.css">
+	<link rel="stylesheet" href="css/chosen.css">
 	
 	<!-- JavaScript at the bottom, except for Modernizr -->
 	<script src="js/modernizr-1.7.min.js"></script>
@@ -32,24 +33,47 @@
 			
 			<fieldset>
 				
-				<label for="halp">I need some haalp...</label>
-				<textarea id="halp" name="halp" tabindex="1"></textarea>
-				
-				<label for="time">Time</label>
-				<select id="time" multiple="" data-placeholder="48 Hours" tabindex="2">
+				<ul>
 					
-				<label for="tags">Tag this with</label>
-				<select data-placeholder="Uncategorized" class="chzn-select" multiple tabindex="3">
-		          	<option value=""></option> 
-		          	<option value="United States">United States</option> 
-		          	<option value="United Kingdom">United Kingdom</option>
-				</select>
+					<li>
+						<label for="halp">I need some haalp...</label>
+						<textarea id="halp" name="halp" tabindex="1"></textarea>
+					</li>
+					
+					<li>
+						<label for="time">Time</label>
+						<select id="time" class="chzn-select" data-placeholder="48 Hours" tabindex="2" style="width:200px;">
+							<option value=""></option>
+							<option value="48hrs">48 Hours</option>
+							<option value="24hrs">24 Hours</option>
+							<option value="12hrs">12 Hours</option>
+							<option value="6hrs">6 Hours</option>
+							<option value="1hr">1 Hour</option>
+							<option value="30min">30 Minutes</option>
+							<option value="10min">10 Minutes</option>
+						</select>	
+					</li>
+					
+					<li>
+						<label for="tags">Tag this with</label>
+						<select id="tags" data-placeholder="Uncategorized" class="chzn-select" multiple tabindex="3" style="width:200px;">
+				          	<option value=""></option> 
+				          	<option value="Uncategorized">Uncategorized</option>
+							<option value="Cultural Faux Pas">My relationship is aaall jacked up</option> 
+				          	<option value="Drrrty Bizna$$">Drrrty Bizna$$</option>
+							<option value="Epic Fail">Epic Fail</option>
+							<option value="Happy Families">Happy Families</option>
+							<option value="Hobo Incident">Hobo Incident</option>
+							<option value="In Deep Shit">In Deep Shit</option>
+						</select>
+					</li>
+				</ul>
 				
 			</fieldset>
 			
 			<fieldset class="submit"> <!-- submit button -->
 				
-				<input type="submit" name="submit" value="Submit Form" />
+				<input type="submit" name="submit" value="Haalp Me!" tabindex="4" />
 				
 			</fieldset>
 			

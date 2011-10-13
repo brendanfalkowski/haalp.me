@@ -79,48 +79,6 @@ textarea::-webkit-scrollbar-button:end:decrement
 ::moz-selection { color:#FFF; background:#98BB29; }
 ::selection { color:#FFF; background:#98BB29; }
 
-
-/*-------------------------------------------*/
-/*  FORMS
-/*-------------------------------------------*/
-
-label { font-size:13px; font-weight:600; font-style:italic; }
-input[type=text] { width:235px; height:30px; padding:2px 7px 2px 65px; }
-textarea { width:494px; max-width:494px; height:170px; padding:6px 8px; }
-::-webkit-input-placeholder { color:#808080; font-style:italic; }
-
-input[type=text],
-textarea
-	{ border:0; background:#FFF;
-		-moz-border-radius:2px;
-		-webkit-border-radius:2px;
-		border-radius:2px;
-		
-		-moz-box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
-		-webkit-box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
-		box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
-		
-		-moz-transition:-moz-box-shadow 150ms ease 0;
-		-webkit-transition:-webkit-box-shadow 150ms ease 0;
-		transition:box-shadow 150ms ease 0;
-	}
-
-input[type=text]:hover,
-textarea:hover
-	{ /* blue */
-	    -moz-box-shadow:rgba(19,152,204,0.6) 0 0 10px;
-        -webkit-box-shadow:rgba(19,152,204,0.6) 0 0 10px;
-        box-shadow:rgba(19,152,204,0.6) 0 0 10px;
-    }
-
-input[type=text]:focus,
-textarea:focus
-	{ /* green */
-	    -moz-box-shadow:rgba(152,187,41,1) 0 0 10px;
-        -webkit-box-shadow:rgba(152,187,41,1) 0 0 10px;
-        box-shadow:rgba(152,187,41,1) 0 0 10px;
-	}
-
 /* Input Wrapper */
 
 .inset { position:relative; float:left; overflow:hidden; margin-bottom:15px; padding:4px; background:#F3F3F3; 
@@ -136,8 +94,98 @@ textarea:focus
 
 section#ask header h1 {
 	text-indent:-9999px;
+	height:0;
+}
+
+section#ask form {
+	position:relative;
+	width:776px;
+	margin:0 auto;
+}
+
+section#ask form li {
+	float:left;
+	margin-top:18px;
+}
+
+section#ask form li:nth-child(1) {
+	width:100%;
 }
 
 section#ask label {
 	display:block;
+	font-weight:bold;
+	margin:0 0 6px 18px;
+}
+
+section#ask form li:nth-child(2) {
+	margin-right:12px;
+}
+
+section#ask form li:nth-child(1) label {
+	margin:0;
+	text-align:center;
+}
+
+section#ask textarea {
+	width:774px;
+	height:212px;
+	border:1px solid #ccc;
+}
+
+section#ask select {
+	height:38px;
+	border:1px solid #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+div#time_chzn {
+	width:168px !important; /* overrides inline width given by plugin */
+	height:38px;
+}
+
+div.chzn-drop {
+	width:166px !important; /* overrides inline width given by plugin */
+}
+
+div.chzn-search input {
+	width:131px !important; /* overrides inline width given by plugin */
+}
+
+div.chzn-container-multi {
+	width:284px !important; /* overrides inline width given by plugin */
+	border:1px solid #ccc;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+section#ask form li.search-choice {
+	height: 18px;
+	line-height: 18px;
+	margin: 7px 4px;
+	width: auto;
+}
+
+section#ask form li.search-field, section#ask form li.active-result {
+	margin-top:0;
+}
+
+section#ask form ul.chzn-results li {
+	float:none;
+}
+
+section#ask .submit input {
+	font-size:30px;
+	text-transform:uppercase;
+	border:1px solid #ccc;
+	padding:10px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	position:absolute;
+	right:0;
+	bottom:5px;
 }
