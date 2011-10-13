@@ -81,11 +81,11 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 /* Layout */
 
-#ask {
+#ask, #my-question {
 	background:#FAFAFA;
 }
 
-#ask .subcontainer, #questions .subcontainer {
+.subcontainer {
 	padding:0 102px;
 	width:776px;
 }
@@ -97,7 +97,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 
 #questions {
-	background:#2e2e2e;
+	background:#0093bb;
 }
 
 #questions .subcontainer {
@@ -125,7 +125,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 #questions article {
 	padding:25px 0;
-	border-top:1px solid #424242;	
+	border-top:1px solid #FAFAFA;	
 }
 
 #questions article header {
@@ -134,7 +134,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 #questions article header h3 {
 	display:inline-block;
-	color:#c93918;
+	color:#090909;
 	font-size:12px;
 	text-transform: uppercase;
 	font-family:Arial,sans-serif;
@@ -157,16 +157,54 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 #questions article header li a {
 	text-transform: uppercase;
-	color:#A7A7A7;
-	text-decoration: underline;
+	color:#efc224;
 	font-size:10px;
 	font-family: Arial,sans-serif;
 }
 
-#questions article p {
-	font-size:14px;
-	color:#FAFAFA;
-	padding:0;
+#comments {
+	background:#404040;
+}
+
+#comments .subcontainer {
+	padding:0 0 30px;
+}
+
+#comments article {
+	padding:15px 0;
+	border-bottom:1px solid #5e5e5e;
+}
+
+#comments article.last {
+	border:0;
+}
+
+#comments article p {
+	padding:0 0 10px;
+	color:#fafafa;
+}
+
+#comments article a {
+	color:#b4b4b4;
+}
+
+#post-comment {
+	padding:20px 0;
+}
+
+#post-comment h3 {
+	color:#fafafa;
+}
+
+.timestamp {
+	font-family:Arial,sans-serif;
+	font-size:10px;
+	text-transform: uppercase;
+	color:#b4b4b4;
+}
+
+.timestamp .pipe {
+	margin:0 5px;
 }
 
 footer {
@@ -180,8 +218,8 @@ footer .subcontainer {
 
 footer h2 {
 	text-align: center;
-	font-size:22px;
-	margin:10px 0 0;
+	font-size:30px;
+	margin:0;
 	padding:0 0 15px;
 }
 
