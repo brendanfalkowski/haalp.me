@@ -5,7 +5,11 @@
 /* trigger when page is ready */
 $(document).ready(function (){
 
-	// your functions go here
+	$('section#questions article p').hover (function() {
+		$(this).addClass('selected');
+	}, function() {
+		$(this).removeClass('selected');
+	})
 
 });
 
