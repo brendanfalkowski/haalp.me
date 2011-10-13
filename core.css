@@ -1,0 +1,136 @@
+/*-------------------------------------------*/
+/*  RESET
+/*-------------------------------------------*/
+
+* { margin:0; padding:0; outline:0; }
+body { background:#FFF; color:#000; line-height:1; }
+html, body, img, fieldset, abbr, acronym { border:0; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; font-style:normal; }
+th, code, cite, caption { font-weight:normal; font-style:normal; text-align:left; }
+ol, ul { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; }   /* still need cellspacing=0 in markup */
+q:before, q:after { content:''; }
+
+/* HTML5 shiv */
+article, aside, audio, canvas, figure, figure img, figcaption, footer, header, hgroup, nav, section, time, video { display:block; }
+
+
+/*-------------------------------------------*/
+/*  COMMON & OVERRIDE
+/*-------------------------------------------*/
+
+body, button, input, select, table, textarea { color:#404040; font-family:serif; font-size:14px; line-height:1.7; }
+body { background:#FFF; }
+
+/* Typography */
+
+h1, h2, h3
+	{ color:#383838; font-weight:600; text-rendering:optimizeLegibility; }
+
+h1 { font-size:36px; font-weight:300; line-height:42px; }
+h2 { margin-bottom:0.6em; font-size:20px; line-height:1.4; }
+h3 { margin-bottom:6px; font-size:18px; line-height:24px; }
+
+p { margin-bottom:1.7em; line-height:1.7; }
+
+blockquote p:last-child { margin-bottom:0; }
+
+em { font-style:italic; }
+strong { font-weight:600; }
+
+abbr,
+dfn
+	{ display:inline-block; border-bottom:1px dotted #909090; color:#808080; line-height:1; }
+
+abbr:hover,
+dfn:hover
+	{ border-bottom-color:#98BB29; color:inherit; cursor:help; }
+
+/* Links */
+
+a { color:#1398CC; text-decoration:none;
+	-moz-transition:color 150ms ease 0;
+	-webkit-transition:color 150ms ease 0;
+	transition:color 150ms ease 0;
+	}
+a:hover, a:focus { color:#98BB29; }
+a:active { color:#F03; }
+
+/* WebKit scrollbars */
+
+textarea::-webkit-scrollbar { width:7px; height:7px;  } /* one is variable, set both */
+textarea::-webkit-scrollbar-corner { background:transparent; }
+textarea::-webkit-scrollbar-track { background:#2C2C2C; -webkit-border-radius:4px; }
+
+textarea::-webkit-scrollbar-thumb { background:#71C1E0; -webkit-border-radius:4px; }
+textarea:hover::-webkit-scrollbar-thumb { background:#1398CC; }
+textarea:hover::-webkit-scrollbar-thumb:active { background:#98BB29; }
+
+textarea::-webkit-scrollbar-button:start:increment,
+textarea::-webkit-scrollbar-button:end:increment
+	{ display:none; }
+
+textarea::-webkit-scrollbar-button:start:decrement,
+textarea::-webkit-scrollbar-button:end:decrement
+	{ display:block; width:0; height:0; background:transparent; }  /* add padding to terminals of track */
+
+/* Text selection */
+
+::moz-selection { color:#FFF; background:#98BB29; }
+::selection { color:#FFF; background:#98BB29; }
+
+
+/*-------------------------------------------*/
+/*  FORMS
+/*-------------------------------------------*/
+
+label { font-size:13px; font-weight:600; font-style:italic; }
+input[type=text] { width:235px; height:30px; padding:2px 7px 2px 65px; }
+textarea { width:494px; max-width:494px; height:170px; padding:6px 8px; }
+::-webkit-input-placeholder { color:#808080; font-style:italic; }
+
+input[type=text],
+textarea
+	{ border:0; background:#FFF;
+		-moz-border-radius:2px;
+		-webkit-border-radius:2px;
+		border-radius:2px;
+		
+		-moz-box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
+		-webkit-box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
+		box-shadow:rgba(0,0,0,0.12) 0 1px 2px; 
+		
+		-moz-transition:-moz-box-shadow 150ms ease 0;
+		-webkit-transition:-webkit-box-shadow 150ms ease 0;
+		transition:box-shadow 150ms ease 0;
+	}
+
+input[type=text]:hover,
+textarea:hover
+	{ /* blue */
+	    -moz-box-shadow:rgba(19,152,204,0.6) 0 0 10px;
+        -webkit-box-shadow:rgba(19,152,204,0.6) 0 0 10px;
+        box-shadow:rgba(19,152,204,0.6) 0 0 10px;
+    }
+
+input[type=text]:focus,
+textarea:focus
+	{ /* green */
+	    -moz-box-shadow:rgba(152,187,41,1) 0 0 10px;
+        -webkit-box-shadow:rgba(152,187,41,1) 0 0 10px;
+        box-shadow:rgba(152,187,41,1) 0 0 10px;
+	}
+
+/* Input Wrapper */
+
+.inset { position:relative; float:left; overflow:hidden; margin-bottom:15px; padding:4px; background:#F3F3F3; 
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	
+	-moz-box-shadow:rgba(0,0,0,0.12) 0 1px 2px inset; 
+	-webkit-box-shadow:rgba(0,0,0,0.12) 0 1px 2px inset; 
+	box-shadow:rgba(0,0,0,0.12) 0 1px 2px inset; 
+	}
+.inset label { position:absolute; left:12px; top:4px; line-height:34px; }
+
