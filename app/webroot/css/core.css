@@ -247,6 +247,11 @@ section#questions article p.knowitalls span {
 	color:#fafafa;
 }
 
+#questions h2.no-haalp {
+	color:#fafafa;
+	margin-bottom:45px;
+}
+
 #comments {
 	background:#404040;
 }
@@ -396,6 +401,7 @@ nav li a:hover {
 #my-haalps-top nav li.myhaalps a {
 	color:#01b1e2;
 }
+
 
 section#ask form {
 	position:relative;
