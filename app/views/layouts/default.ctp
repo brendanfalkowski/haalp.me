@@ -12,8 +12,8 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	
-	<link rel="stylesheet" media="screen" href="<?php print Router::url('/css/core.css') ?>">
 	<link rel="stylesheet" href="<?php print Router::url('/css/chosen.css') ?>">
+	<link rel="stylesheet" media="screen" href="<?php print Router::url('/css/core.css') ?>">
 	
 	<!-- JavaScript at the bottom, except for Modernizr -->
 	<script src="<?php print Router::url('/js/modernizr-1.7.min.js') ?>"></script>
