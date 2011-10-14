@@ -114,6 +114,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	font-family:Arial,sans-serif;
 	position:relative;
 	right:auto;
+	overflow:hidden;
 }
 
 #questions .article-sort {
@@ -202,6 +203,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 #questions article {
 	padding-right:60px;
+	padding-top:15px;
 }
 
 #questions article.selected {
@@ -345,7 +347,7 @@ header h1 a {
 	text-indent:-9999px;
 }
 
-nav {
+nav.top-menu {
 	position:absolute;
 	right:102px;
 	top:8px;
