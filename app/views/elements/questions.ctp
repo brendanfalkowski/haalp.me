@@ -14,9 +14,9 @@
 		<article>
 			<header>
 				<h3><time class="timeago" datetime="<?php print date('Y-m-d\TH:i:sP', strtotime($q['Question']['expiry'])) ?>"><?php print date('F, d, Y', strtotime($q['Question']['expiry'])) ?></time></h3>
+				<ul><li><?php print $q['Category']['name'] ?></li></ul>
 			</header>
 			<p><a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>"><?php print $q['Question']['question']?></a></p>
-			<ul><li>Filed In: <a href=""><?php print $q['Category']['name'] ?></a></li></ul>
 		</article>
 		<?php endforeach?>
 	</div>
