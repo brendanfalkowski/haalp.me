@@ -514,3 +514,20 @@ section#comments div.submit input {
 	background:#444;
 	font-weight:bold;
 }
+
+section#my-haalps-top h2 {
+	margin:20px 0 0;
+	padding:0 0 20px;
+	font-size:32px;
+	font-family: proxima-nova,sans-serif;
+	display:inline-block;
+}
+
+section#my-haalps-top p {
+	font-family:Arial,sans-serif;
+	font-size:14px;
+	padding:0;
+	float:right;
+	position: relative;
+	top:35px;
+}

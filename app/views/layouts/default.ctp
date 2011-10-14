@@ -31,13 +31,13 @@
 		<div class="subcontainer">
 			<h2>Wait so whaaat???</h2>
 			<article>
-				<p>How did you get ready for the big angry dance scene in Footloose? You just think about anyone that's ever pissed you off your whole life and take it out on them.</p>
+				<p>Haalp is a service that crowd-sources anonymous advice for those moments in life when you don't know what to do and need advice quickly.</p>
 			</article>
 			<article>
-				<p>Did you have a double? As far as the dancing goes? None. I did all of the dancing. The gymnastics flip on the pole, I can't take credit for that. But I mean, great editing. </p>
+				<p>Write out your question, choose a category and tell us how urgent the problem is and let the Haalp community tell you what to do.</p>
 			</article>
 			<article class="last">
-				<p>Is there a time when dancing should be outlawed? There is a time. Around Julianne Hough, if you're a creep. I can handle it... she, not so much.</p>
+				<p>Because let's be honest, sometimes you just can't trust your own brain to have your best interests at heart...we're here to haalp.</p>
 			</article>
 		</div>
 	</footer>
