@@ -49,11 +49,11 @@
 
 <script src="<?php print Router::url('/js/jquery-timeago/jquery.timeago.js') ?>"></script>
 
-<!-- this is where we put our custom functions -->
-<script src="<?php print Router::url('/js/functions.js') ?>"></script>
-
 <script src="js/chosen.jquery.min.js"></script>
 <script type="text/javascript"> $(".chzn-select").chosen(); </script>
+
+<!-- this is where we put our custom functions -->
+<script src="<?php print Router::url('/js/functions.js') ?>"></script>
 
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
