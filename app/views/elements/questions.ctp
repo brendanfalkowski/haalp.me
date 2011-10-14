@@ -12,6 +12,9 @@
 			*/ ?>
 			<?php print $html->link('See All Hallps >>', '/all', array('class' => 'more-haalps')) ?>
 		</nav>
+		<?php if (!$questions): ?>
+			<h1>You have no haalp!</h1>
+		<?php endif ?>
 		<?php foreach ($questions as $q): ?>
 		<article>
 			<a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>" style="display:block;">
@@ -21,7 +24,7 @@
 			<p><?php print $q['Question']['question']?></p>
 			<div style="position:relative;">
 				<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
-				<p class="knowitalls"><span><?php print count($q['Comment']) ?></span> know-it-alls have given haalp</p>
+				<p class="knowitalls"><span><?php print count($q['Comment']) ?></span> Know-it-alls have given haalp.</p>
 			</div>
 			</a>
 		</article>
