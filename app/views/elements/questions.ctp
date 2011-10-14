@@ -21,7 +21,7 @@
 			<p><?php print $q['Question']['question']?></p>
 			<div style="position:relative;">
 				<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
-				<p class="knowitalls"><span><?php print count($q['Comment']) ?></span> know-it-alls have given haalp</p>
+				<p class="knowitalls"><span><?php print count($q['Comment']) ?></span> Know-it-alls have given haalp.</p>
 			</div>
 			</a>
 		</article>
