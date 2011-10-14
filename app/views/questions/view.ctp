@@ -21,6 +21,8 @@ Private URL:
 
 <h2>My Haalp: <?php print $question['Question']['question'] ?></h2>
 
+<?php if (strtotime($question['Question']['expiry']) > time()): ?>
+
 <h2>Add Comment</h2>
 
 <?php print $form->create('Comment', array('action' => 'add')) ?>
@@ -29,6 +31,8 @@ Private URL:
 <?php print $form->input('username', array('autofocus' => 'autofocus')) ?>
 <?php print $form->input('comment') ?>
 <?php print $form->end('Comment') ?>
+
+<?php endif ?>
 
 <?php if ($question['Comment']): ?>
 
