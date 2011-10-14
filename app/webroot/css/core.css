@@ -496,6 +496,15 @@ section#ask .submit input {
 	bottom:5px;
 	font-family: proxima-nova,sans-serif;
 	font-weight: 900;
+	
+	-moz-transition:all 200ms ease;
+	-webkit-transition:all 200ms ease;
+}
+
+section#ask .submit input:hover {
+	background:#951663;
+	color:#FFF;
+	cursor:pointer;
 }
 
 section#question-top h2 {
@@ -553,6 +562,18 @@ section#comments div.submit input {
 	color:#fff;
 	background:#444;
 	font-weight:bold;
+	
+	-moz-transition:background 200ms ease;
+	-webkit-transition:background 200ms ease;
+}
+
+section#comments div.submit input:hover {
+	background:#01B1E2;
+	cursor:pointer;
+}
+
+section#comments div.submit input:active {
+	background:#951663;
 }
 
 section#comments article p.date {
