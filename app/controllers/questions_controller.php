@@ -30,14 +30,19 @@ class QuestionsController extends AppController {
 	 */
 	function add() {
 		if ($this->data) {
-			$this->data['Question']['author'] = $this->Cookie->read('author');
-			$this->data['Question']['hash'] = $this->_hash($this->data['Question']['question']);
-			$this->data['Question']['expiry'] = date('Y-m-d H:i:s', strtotime($this->data['Question']['expiry']));
-			if ($this->Question->save($this->data)) {
-				$this->Session->SetFlash('Successfully added question');
-				$this->redirect('/questions/view/' . $this->Question->id . '/' . $this->data['Question']['hash']);
+			
+			if (empty($this->data['Question']['question'])) {
+				$this->Question->invalidate('question', 'Required');
 			} else {
-				$this->Session->SetFlash('Failed to save question', null, null, 'error');
+				$this->data['Question']['author'] = $this->Cookie->read('author');
+				$this->data['Question']['hash'] = $this->_hash($this->data['Question']['question']);
+				$this->data['Question']['expiry'] = date('Y-m-d H:i:s', strtotime($this->data['Question']['expiry']));
+				if ($this->Question->save($this->data)) {
+					$this->Session->SetFlash('Successfully added question');
+					$this->redirect('/questions/view/' . $this->Question->id . '/' . $this->data['Question']['hash']);
+				} else {
+					$this->Session->SetFlash('Failed to save question', null, null, 'error');
+				}	
 			}
 		}
 		$expires = array(
