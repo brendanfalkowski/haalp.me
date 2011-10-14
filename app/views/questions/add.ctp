@@ -1,4 +1,12 @@
-<?php print $this->element('menu') ?>
+<section id="ask">
+	<div class="subcontainer">
+		<header>
+
+			<h1><a href="">haalp...</a></h1>
+
+		</header>
+
+		<?php print $this->element('menu') ?>
 
 		<?php print $form->create('Question', array('action' => 'add', 'id' => 'ask-form')) ?>
 

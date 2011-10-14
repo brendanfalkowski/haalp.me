@@ -5,7 +5,7 @@
 /* trigger when page is ready */
 $(document).ready(function (){
 
-	$('section#questions article p').hover (function() {
+	$('section#questions article').hover (function() {
 		$(this).addClass('selected');
 	}, function() {
 		$(this).removeClass('selected');

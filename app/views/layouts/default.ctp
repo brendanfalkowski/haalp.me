@@ -23,14 +23,6 @@
 </head>
 
 <body id="home">
-	
-	<section id="ask">
-		<div class="subcontainer">
-			<header>
-	
-				<h1><a href="">haalp...</a></h1>
-	
-			</header>
 			
 	<?php $session->flash(); ?>
 	<?php echo $content_for_layout; ?>
