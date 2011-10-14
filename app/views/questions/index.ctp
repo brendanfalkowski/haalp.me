@@ -5,7 +5,8 @@
 			<?php print $this->element('menu') ?>
 		</header>
 		
-		<h2 class="p2">All Haalps</h2>
+		<h2 class="p2">All Haalps!</h2>
+		<p>The Lord helps those that haalp themselves.</p>		
 	</div>
 </section>
 
