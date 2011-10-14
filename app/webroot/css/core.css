@@ -19,7 +19,7 @@ article, aside, audio, canvas, figure, figure img, figcaption, footer, header, h
 /*  COMMON & OVERRIDE
 /*-------------------------------------------*/
 
-body, button, input, select, table, textarea { font-family:serif; font-size:14px; line-height:1.7; }
+body, button, input, select, table, textarea { font-family:arial,helvetica,sans-serif; font-size:14px; line-height:1.7; }
 body { background:#FFF; text-align: center; margin:0; padding:0; background:#FAFAFA; }
 
 /* Typography */
@@ -31,7 +31,7 @@ h1 { font-size:36px; font-weight:300; line-height:42px; }
 h2 { margin-bottom:0.6em; font-size:20px; line-height:1.4; }
 h3 { margin-bottom:6px; font-size:18px; line-height:24px; }
 
-p { font-size:16px; line-height:24px; font-family:Georgia,Times,sans-serif; }
+p { font-size:16px; line-height:24px; font-family:Georgia,Times,serif; }
 
 blockquote p:last-child { margin-bottom:0; }
 
@@ -149,7 +149,16 @@ textarea::-webkit-scrollbar-button:end:decrement
 }
 
 #questions .more-haalps {
-	float:right;
+	background: none repeat scroll 0 0 #018AB6;
+	border: 1px solid #006C8F;
+	display: block;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	width: 168px;
+	font-family: proxima-nova,sans-serif;
+	font-size:18px;
 }
 
 #questions article {
@@ -254,10 +263,11 @@ footer .subcontainer {
 }
 
 footer h2 {
+	font-family: proxima-nova,sans-serif;
+	font-size: 42px;
+	margin: 0;
+	padding: 0 0 15px;
 	text-align: center;
-	font-size:30px;
-	margin:0;
-	padding:0 0 15px;
 }
 
 footer article {
@@ -366,9 +376,12 @@ section#ask form li:nth-child(1) label {
 }
 
 section#ask textarea {
-	width:774px;
-	height:212px;
-	border:1px solid #ccc;
+	border: 1px solid #CCCCCC;
+	font-family: georgia,times,serif;
+	font-size: 16px;
+	height: 192px;
+	padding: 10px;
+	width: 754px;
 }
 
 section#ask select {
@@ -416,10 +429,10 @@ section#ask form ul.chzn-results li {
 }
 
 section#ask .submit input {
-	font-size:30px;
+	font-size:36px;
 	color:#4d4d4d;
 	border:1px solid #ccc;
-	padding:10px;
+	padding:8px 24px;
 	-webkit-border-radius:4px;
 	-moz-border-radius:4px;
 	border-radius:4px;

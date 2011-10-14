@@ -11,7 +11,7 @@
 						<?php print $form->input('expiry', array('id' => 'time', 'label' => 'Time', 'class' => 'chzn-select', 'options' => $expires)) ?>
 					</li>
 					<li>
-						<?php print $form->input('category_id', array('id' => 'tags', 'label' => 'Tag this with', 'data-placeholder' => 'Uncategorized')) ?>
+						<?php print $form->input('category_id', array('id' => 'tags', 'label' => 'Tag this with', 'class' => 'chzn-select', 'data-placeholder' => 'Uncategorized')) ?>
 					</li>
 				</ul>
 			</fieldset>
