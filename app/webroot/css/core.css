@@ -363,7 +363,15 @@ nav li a {
 	color:#333;
 }
 
-#home nav li.home a {
+#ask nav li.home a {
+	color:#01b1e2;
+}
+
+#all-haalps-top nav li.allhaalps a {
+	color:#01b1e2;
+}
+
+#my-haalps-top nav li.myhaalps a {
 	color:#01b1e2;
 }
 

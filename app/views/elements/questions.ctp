@@ -20,6 +20,7 @@
 			</header>
 			<p><?php print $q['Question']['question']?></p>
 			<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
+			<div><?php print count($q['Comment']) ?> know-it-alls have given haalp</div>
 			</a>
 		</article>
 		<?php endforeach?>
