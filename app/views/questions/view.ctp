@@ -1,3 +1,6 @@
+<style>
+a { color: blue; }
+</style>
 <section id="question-top">
 	
 	<div class="subcontainer">
@@ -17,12 +20,12 @@
 		<div>
 		Public URL: 
 		<?php print $html->link('http://haalp.me/' . $question['Question']['id'], '/questions/view/' . $question['Question']['id']) ?>
-		</div><br />
+		</div>
 
 		<div>
 		Private URL:
 		<?php print $html->link('http://haalp.me/' . $question['Question']['id'] .'/' . $question['Question']['hash'], '/questions/view/' . $question['Question']['id'] . '/' . $question['Question']['hash']) ?>
-		</div><br />
+		</div>
 
 		<?php endif ?>
 		
