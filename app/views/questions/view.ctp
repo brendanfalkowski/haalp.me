@@ -3,12 +3,9 @@
 	<div class="subcontainer">
 		
 		<header>
-
-			<h1><a href="">haalp...</a></h1>
-
+			<h1><?php print $html->link('haalp...', '/') ?></h1>
+			<?php print $this->element('menu') ?>
 		</header>
-		
-		<?php print $this->element('menu') ?>
 
 		<?php if ($hash): ?>
 

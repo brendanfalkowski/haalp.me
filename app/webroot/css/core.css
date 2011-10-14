@@ -227,7 +227,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	margin-top:12px;
 }
 
-#questions article ul li a {
+#questions article ul li span {
 	color:#951663;
 }
 
@@ -556,4 +556,21 @@ section#comments article p.votes span {
 
 section#comments article p.votes a {
 	text-decoration:underline;
+}
+
+section#my-haalps-top h2 {
+	margin:20px 0 0;
+	padding:0 0 20px;
+	font-size:32px;
+	font-family: proxima-nova,sans-serif;
+	display:inline-block;
+}
+
+section#my-haalps-top p {
+	font-family:Arial,sans-serif;
+	font-size:14px;
+	padding:0;
+	float:right;
+	position: relative;
+	top:35px;
 }

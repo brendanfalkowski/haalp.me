@@ -14,12 +14,14 @@
 		</nav>
 		<?php foreach ($questions as $q): ?>
 		<article>
+			<a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>" style="display:block;">
 			<header>
 				<h3><time class="timeago" datetime="<?php print date('Y-m-d\TH:i:s\ZP', strtotime($q['Question']['expiry'])) ?>"><?php print date('F d, Y', strtotime($q['Question']['expiry'])) ?></time></h3>
 			</header>
-			<p><a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>"><?php print $q['Question']['question']?></a></p>
-			<ul><li>Filed In: <a href=""><?php print $q['Category']['name'] ?></a></li></ul>
+			<p><?php print $q['Question']['question']?></p>
+			<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
 			<div><?php print count($q['Comment']) ?> know-it-alls have given haalp</div>
+			</a>
 		</article>
 		<?php endforeach?>
 	</div>
