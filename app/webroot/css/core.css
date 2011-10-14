@@ -387,6 +387,12 @@ nav li a:hover {
 	color:#01b1e2;
 }
 
+#all-haalps-top p {
+	float:right;
+	position: relative;
+	top:35px;
+}
+
 #my-haalps-top nav li.myhaalps a {
 	color:#01b1e2;
 }
