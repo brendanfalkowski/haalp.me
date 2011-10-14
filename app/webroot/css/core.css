@@ -20,7 +20,7 @@ article, aside, audio, canvas, figure, figure img, figcaption, footer, header, h
 /*-------------------------------------------*/
 
 body, button, input, select, table, textarea { font-family:arial,helvetica,sans-serif; font-size:14px; line-height:1.7; }
-body { background:#FFF; text-align: center; margin:0; padding:0; background:#FAFAFA; }
+body { background:#FFF; margin:0; padding:0; background:#FAFAFA; }
 
 /* Typography */
 
@@ -558,7 +558,8 @@ section#comments article p.votes a {
 	text-decoration:underline;
 }
 
-section#my-haalps-top h2 {
+section#my-haalps-top h2,
+.p2 {
 	margin:20px 0 0;
 	padding:0 0 20px;
 	font-size:32px;
