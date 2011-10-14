@@ -54,7 +54,8 @@
 		<?php if ($question['Comment']): ?>
 
 		<?php foreach ($question['Comment'] as $c): ?>
-			<article>
+		<?php $class = ($c['author'] == $author) ? 'isauthor' : '' ?>
+			<article class="<?php print $class ?>">
 				<?php if ($c['username']): ?>
 					<b>Username:</b><?php print $c['username']?><br />
 				<?php endif ?>
