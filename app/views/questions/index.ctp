@@ -13,7 +13,7 @@
 <fieldset>
 	<legend>Filters</legend>
 	<?php print $form->input('text', array('autofocus' => 'autofocus')) ?>
-	<?php print $form->input('category_id', array('label' => 'Category', 'empty' => true)) ?>
+	<?php print $form->input('category_id', array('label' => 'Category', 'class' => 'chzn-select', 'empty' => true)) ?>
 </fieldset>
 <?php print $form->end('Filter') ?>
 
