@@ -12,6 +12,9 @@
 			*/ ?>
 			<?php print $html->link('See All Hallps >>', '/all', array('class' => 'more-haalps')) ?>
 		</nav>
+		<?php if (!$questions): ?>
+			<h1>You have no haalp!</h1>
+		<?php endif ?>
 		<?php foreach ($questions as $q): ?>
 		<article>
 			<a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>" style="display:block;">
