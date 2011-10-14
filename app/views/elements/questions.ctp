@@ -19,8 +19,10 @@
 				<h3><time class="timeago" datetime="<!--2012-07-17T09:24:17Z--><?php print date('Y-m-d\TH:i:s\ZP', strtotime($q['Question']['expiry'])) ?>"><?php print date('F d, Y', strtotime($q['Question']['expiry'])) ?></time></h3>
 			</header>
 			<p><?php print $q['Question']['question']?></p>
-			<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
-			<div><?php print count($q['Comment']) ?> know-it-alls have given haalp</div>
+			<div style="position:relative;">
+				<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>
+				<p class="knowitalls"><span><?php print count($q['Comment']) ?></span> know-it-alls have given haalp</p>
+			</div>
 			</a>
 		</article>
 		<?php endforeach?>
