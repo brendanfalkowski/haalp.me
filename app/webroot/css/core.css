@@ -227,7 +227,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	margin-top:12px;
 }
 
-#questions article ul li a {
+#questions article ul li span {
 	color:#951663;
 }
 
