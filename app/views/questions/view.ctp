@@ -28,7 +28,7 @@
 		</div><br />
 
 		<?php endif ?>
-
+		
 		<h2>I need haalp.</h2>
 
 		<p><?php print $question['Question']['question'] ?></p>
@@ -41,6 +41,8 @@
 	
 	<div class="subcontainer">
 		
+		<?php if (strtotime($question['Question']['expiry']) > time()): ?>
+		
 		<h2>Leave a comment</h2>
 
 		<?php print $form->create('Comment', array('action' => 'add')) ?>
@@ -49,6 +51,8 @@
 		<?php //print $form->input('username', array('autofocus' => 'autofocus')) ?>
 		<?php print $form->input('comment', array('label' => false)) ?>
 		<?php print $form->end('Post Comment') ?>
+		
+		<?php endif ?>
 
 		<?php if ($question['Comment']): ?>
 

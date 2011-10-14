@@ -10,8 +10,10 @@ $(document).ready(function (){
 	}, function() {
 		$(this).removeClass('selected');
 	})
-	
-	$('.timeago').timeago();
+
+	$.timeago.settings.allowFuture = true;
+	$.timeago.settings.strings.suffixFromNow = 'left';
+	$('time.timeago').timeago();
 
 });
 
