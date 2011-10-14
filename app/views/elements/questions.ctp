@@ -19,6 +19,7 @@
 			</header>
 			<p><a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>"><?php print $q['Question']['question']?></a></p>
 			<ul><li>Filed In: <a href=""><?php print $q['Category']['name'] ?></a></li></ul>
+			<div><?php print count($q['Comment']) ?> know-it-alls have given haalp</div>
 		</article>
 		<?php endforeach?>
 	</div>
