@@ -13,7 +13,7 @@
 			<?php print $html->link('See All Hallps >>', '/all', array('class' => 'more-haalps')) ?>
 		</nav>
 		<?php if (!$questions): ?>
-			<h1>You have no haalp!</h1>
+			<h2 class="no-haalp">You need no haalp right now.</h2>
 		<?php endif ?>
 		<?php foreach ($questions as $q): ?>
 		<article>

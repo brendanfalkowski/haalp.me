@@ -6,7 +6,7 @@
 		</header>
 		
 		<h2 class="p2">All Haalps!</h2>
-		<p>The Lord helps those that haalp themselves.</p>		
+		<p>The Lord haalps those that haalp themselves.</p>		
 	</div>
 </section>
 
