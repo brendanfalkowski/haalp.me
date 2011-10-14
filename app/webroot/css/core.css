@@ -114,6 +114,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	font-family:Arial,sans-serif;
 	position:relative;
 	right:auto;
+	overflow:hidden;
 }
 
 #questions .article-sort {
@@ -202,6 +203,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 
 #questions article {
 	padding-right:60px;
+	padding-top:15px;
 }
 
 #questions article.selected {
@@ -225,7 +227,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	margin-top:12px;
 }
 
-#questions article ul li a {
+#questions article ul li span {
 	color:#951663;
 }
 
@@ -242,7 +244,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 }
 
 #comments article {
-	padding:15px 0;
+	padding:32px 0;
 	border-bottom:1px solid #5e5e5e;
 }
 
@@ -251,7 +253,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 }
 
 #comments article p {
-	padding:0 0 10px;
+	padding:0 0 16px;
 	color:#fafafa;
 }
 
@@ -341,11 +343,11 @@ header h1 a {
 	height:130px;
 	width:202px;
 	display:block;
-	background:url('../img/logo.png') no-repeat 0 8px;
+	background:url('../img/haalp_logo.png') no-repeat 0 8px;
 	text-indent:-9999px;
 }
 
-nav {
+nav.top-menu {
 	position:absolute;
 	right:102px;
 	top:8px;
@@ -481,6 +483,19 @@ section#question-top p {
 	margin-bottom:54px;
 }
 
+section#question-top p.holyshit {
+	margin-bottom:0;
+}
+
+section#question-top a {
+	color:#4d4d4d;
+	text-decoration:underline;
+}
+
+section#question-top div {
+	color:#4d4d4d;
+}
+
 section#comments {
 	background:#4d4d4d;
 	color:#fff;
@@ -489,17 +504,19 @@ section#comments {
 section#comments h2 {
 	font-family: proxima-nova,sans-serif;
 	padding-top:54px;
+	margin-bottom:16px;
 	color:#fff;
 }
 
 section#comments textarea {
 	width:774px;
 	height:130px;
+	margin-bottom:32px;
 }
 
 section#comments div.submit {
 	position:absolute;
-	top:54px;
+	top:48px;
 	right:0;
 }
 
@@ -513,6 +530,32 @@ section#comments div.submit input {
 	color:#fff;
 	background:#444;
 	font-weight:bold;
+}
+
+section#comments article p.date {
+	color: #B4B4B4;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-bottom:8px;
+}
+
+section#comments article p.votes {
+	color: #B4B4B4;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 14px;
+}
+
+section#comments article p.votes span {
+	padding:2px 4px;
+	margin-right:10px;
+	background:#b4b4b4;
+	color:#4d4d4d;
+	font-weight:bold;
+}
+
+section#comments article p.votes a {
+	text-decoration:underline;
 }
 
 section#my-haalps-top h2 {

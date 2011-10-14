@@ -14,7 +14,7 @@
 
 		<h2>You got haalp.</h2>
 
-		<p>Holy shit, you do need haalp! It's on the way. Below is your private URL you can use to share. The private URL is just for you to use to check back in on your haalp request.</p>
+		<p class="holyshit">Holy shit, you do need haalp! It's on the way. Below is your private URL you can use to share. The private URL is just for you to use to check back in on your haalp request.</p>
 		<br />
 
 		<div>
@@ -56,20 +56,18 @@
 
 		<?php if ($question['Comment']): ?>
 
-		<h2>Comments</h2>
-
 		<?php foreach ($question['Comment'] as $c): ?>
-			<div style="border: 1px solid black">
+			<article>
 				<?php if ($c['username']): ?>
 					<b>Username:</b><?php print $c['username']?><br />
 				<?php endif ?>
-				<b>Comment:</b>
-				<?php print $c['comment']?>
-				<b>Votes</b><?php print $c['votes']?>
-
-				<?php print $html->link('Vote Up', "/comments/vote/{$c['id']}/up") ?>
-				<?php print $html->link('Vote Down', "/comments/vote/{$c['id']}/down") ?>
-			</div>
+				
+				<p class="date"><?php print date('F d, Y H:i', strtotime($c['created'])) ?></p>
+				
+				<p><?php print $c['comment']?></p>
+				
+				<p class="votes"><span><?php print $c['votes']?> Votes</span> Is this Haalpfull? <?php print $html->link('YES', "/comments/vote/{$c['id']}/up") ?> or <?php print $html->link('NO', "/comments/vote/{$c['id']}/down") ?></p>
+			</article>
 		<?php endforeach?>
 
 		<?php endif ?>
@@ -78,12 +76,8 @@
 
 </section> <!-- End #comments -->
 
-<hr />
+<?php //if ($questions): ?>
 
-<?php if ($questions): ?>
+<?php // print $this->element('questions') ?>
 
-<h2>Other Haalps</h2>
-
-<?php print $this->element('questions') ?>
-
-<?php endif ?>
+<?php //endif ?>
