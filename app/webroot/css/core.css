@@ -235,6 +235,18 @@ textarea::-webkit-scrollbar-button:end:decrement
 	text-decoration:underline;
 }
 
+section#questions article p.knowitalls {
+	font-family: arial,helvetica,sans-serif;
+	font-size: 14px;
+	margin-top:8px;
+}
+
+section#questions article p.knowitalls span {
+	padding:2px 4px;
+	background:#951663;
+	color:#fafafa;
+}
+
 #comments {
 	background:#404040;
 }
@@ -285,7 +297,7 @@ footer {
 }
 
 footer .subcontainer {
-	width:898px;
+	width:776px;
 	padding:41px 41px 50px;
 }
 
@@ -298,8 +310,8 @@ footer h2 {
 }
 
 footer article {
-	width:272px;
-	margin-right:41px;
+	width:237px;
+	margin-right:32px;
 	float:left;
 }
 
@@ -361,6 +373,10 @@ nav li {
 
 nav li a {
 	color:#333;
+}
+
+nav li a:hover {
+	color:#4d4d4d;
 }
 
 #ask nav li.home a {
@@ -587,3 +603,13 @@ section#my-haalps-top p {
 	position: relative;
 	top:35px;
 }
+
+
+
+/* Chosen overrides */
+
+.chzn-container .chzn-results li {
+	line-height:1;
+}
+
+
