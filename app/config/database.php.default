@@ -77,10 +77,11 @@ class DATABASE_CONFIG {
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'admit1234',
-		'database' => 'haalp',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'database_name',
 		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
 
 	var $test = array(
