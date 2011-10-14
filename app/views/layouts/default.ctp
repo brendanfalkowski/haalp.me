@@ -8,7 +8,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
 	
-	<title>Haalp - <?php echo $title_for_layout; ?></title>
+	<title>Oh shit. You just did what? Get haalp.</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	
