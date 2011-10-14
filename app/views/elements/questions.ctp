@@ -16,7 +16,7 @@
 		<article>
 			<a href="<?php print Router::url('/questions/view/' . $q['Question']['id']) ?>" style="display:block;">
 			<header>
-				<h3><time class="timeago" datetime="<?php print date('Y-m-d\TH:i:s\ZP', strtotime($q['Question']['expiry'])) ?>"><?php print date('F d, Y', strtotime($q['Question']['expiry'])) ?></time></h3>
+				<h3><time class="timeago" datetime="<!--2012-07-17T09:24:17Z--><?php print date('Y-m-d\TH:i:s\ZP', strtotime($q['Question']['expiry'])) ?>"><?php print date('F d, Y', strtotime($q['Question']['expiry'])) ?></time></h3>
 			</header>
 			<p><?php print $q['Question']['question']?></p>
 			<ul><li>Filed In: <span><?php print $q['Category']['name'] ?></span></li></ul>

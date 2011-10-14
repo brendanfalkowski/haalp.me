@@ -583,3 +583,13 @@ section#my-haalps-top p {
 	position: relative;
 	top:35px;
 }
+
+
+
+/* Chosen overrides */
+
+.chzn-container .chzn-results li {
+	line-height:1;
+}
+
+
