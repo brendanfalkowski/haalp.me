@@ -11,7 +11,7 @@
 
 		<h2>You got haalp.</h2>
 
-		<p>Holy shit, you do need haalp! It's on the way. Below is your private URL you can use to share. The private URL is just for you to use to check back in on your haalp request.</p>
+		<p class="holyshit">Holy shit, you do need haalp! It's on the way. Below is your private URL you can use to share. The private URL is just for you to use to check back in on your haalp request.</p>
 		<br />
 
 		<div>
@@ -59,14 +59,11 @@
 					<b>Username:</b><?php print $c['username']?><br />
 				<?php endif ?>
 				
-				<p><?php print $c['comment']?></p>
-				
 				<p class="date"><?php print date('F d, Y H:i', strtotime($c['created'])) ?></p>
 				
-				<b>Votes</b><?php print $c['votes']?>
-
-				<?php print $html->link('Vote Up', "/comments/vote/{$c['id']}/up") ?>
-				<?php print $html->link('Vote Down', "/comments/vote/{$c['id']}/down") ?>
+				<p><?php print $c['comment']?></p>
+				
+				<p class="votes"><span><?php print $c['votes']?> Votes</span> Is this Haalpfull? <?php print $html->link('YES', "/comments/vote/{$c['id']}/up") ?> or <?php print $html->link('NO', "/comments/vote/{$c['id']}/down") ?></p>
 			</article>
 		<?php endforeach?>
 

@@ -227,7 +227,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 	margin-top:12px;
 }
 
-#questions article ul li a {
+#questions article ul li span {
 	color:#951663;
 }
 
@@ -343,7 +343,7 @@ header h1 a {
 	height:130px;
 	width:202px;
 	display:block;
-	background:url('../img/logo.png') no-repeat 0 8px;
+	background:url('../img/haalp_logo.png') no-repeat 0 8px;
 	text-indent:-9999px;
 }
 
@@ -483,6 +483,19 @@ section#question-top p {
 	margin-bottom:54px;
 }
 
+section#question-top p.holyshit {
+	margin-bottom:0;
+}
+
+section#question-top a {
+	color:#4d4d4d;
+	text-decoration:underline;
+}
+
+section#question-top div {
+	color:#4d4d4d;
+}
+
 section#comments {
 	background:#4d4d4d;
 	color:#fff;
@@ -524,4 +537,23 @@ section#comments article p.date {
 	font-family: arial,helvetica,sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
+	padding-bottom:8px;
+}
+
+section#comments article p.votes {
+	color: #B4B4B4;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 14px;
+}
+
+section#comments article p.votes span {
+	padding:2px 4px;
+	margin-right:10px;
+	background:#b4b4b4;
+	color:#4d4d4d;
+	font-weight:bold;
+}
+
+section#comments article p.votes a {
+	text-decoration:underline;
 }
