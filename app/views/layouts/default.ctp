@@ -27,8 +27,6 @@
 	<?php $session->flash(); ?>
 	<?php echo $content_for_layout; ?>
 	
-	<?php print $this->element('questions') ?>
-	
 	<footer>
 		<div class="subcontainer">
 			<h2>Wait so whaaat???</h2>
