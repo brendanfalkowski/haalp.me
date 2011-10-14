@@ -50,7 +50,7 @@
  *
  */
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-		define('CAKE_CORE_INCLUDE_PATH',  DS . 'Library' . DS . 'WebServer' . DS . 'Documents' . DS . 'myhaalp');
+		define('CAKE_CORE_INCLUDE_PATH',  dirname(dirname(dirname(__FILE__))));
 	}
 
 /**
