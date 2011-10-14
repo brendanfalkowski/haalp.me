@@ -31,3 +31,5 @@
 		</form>
 	</div>
 </section>
+
+<?php print $this->element('questions') ?>
