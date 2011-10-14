@@ -56,20 +56,21 @@
 
 		<?php if ($question['Comment']): ?>
 
-		<h2>Comments</h2>
-
 		<?php foreach ($question['Comment'] as $c): ?>
-			<div style="border: 1px solid black">
+			<article>
 				<?php if ($c['username']): ?>
 					<b>Username:</b><?php print $c['username']?><br />
 				<?php endif ?>
-				<b>Comment:</b>
-				<?php print $c['comment']?>
+				
+				<p><?php print $c['comment']?></p>
+				
+				<p class="date"><?php print date('F d, Y H:i', strtotime($c['created'])) ?></p>
+				
 				<b>Votes</b><?php print $c['votes']?>
 
 				<?php print $html->link('Vote Up', "/comments/vote/{$c['id']}/up") ?>
 				<?php print $html->link('Vote Down', "/comments/vote/{$c['id']}/down") ?>
-			</div>
+			</article>
 		<?php endforeach?>
 
 		<?php endif ?>
@@ -78,12 +79,8 @@
 
 </section> <!-- End #comments -->
 
-<hr />
+<?php //if ($questions): ?>
 
-<?php if ($questions): ?>
+<?php // print $this->element('questions') ?>
 
-<h2>Other Haalps</h2>
-
-<?php print $this->element('questions') ?>
-
-<?php endif ?>
+<?php //endif ?>

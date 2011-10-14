@@ -242,7 +242,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 }
 
 #comments article {
-	padding:15px 0;
+	padding:32px 0;
 	border-bottom:1px solid #5e5e5e;
 }
 
@@ -251,7 +251,7 @@ textarea::-webkit-scrollbar-button:end:decrement
 }
 
 #comments article p {
-	padding:0 0 10px;
+	padding:0 0 16px;
 	color:#fafafa;
 }
 
@@ -489,17 +489,19 @@ section#comments {
 section#comments h2 {
 	font-family: proxima-nova,sans-serif;
 	padding-top:54px;
+	margin-bottom:16px;
 	color:#fff;
 }
 
 section#comments textarea {
 	width:774px;
 	height:130px;
+	margin-bottom:32px;
 }
 
 section#comments div.submit {
 	position:absolute;
-	top:54px;
+	top:48px;
 	right:0;
 }
 
@@ -513,4 +515,11 @@ section#comments div.submit input {
 	color:#fff;
 	background:#444;
 	font-weight:bold;
+}
+
+section#comments article p.date {
+	color: #B4B4B4;
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
 }
