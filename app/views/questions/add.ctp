@@ -10,7 +10,7 @@
 			<fieldset>
 				<ul>
 					<li>
-						<?php print $form->input('question', array('id' => 'halp', 'placeholder' => 'I need haalp...', 'label' => 'Oh shit. You just did what? Get haalp.', 'autofocus' => 'autofocus')) ?>
+						<?php print $form->input('question', array('id' => 'halp', 'placeholder' => 'Let it out... you\'ll feel a lot better.', 'label' => 'Oh shit. You just did what? Get haalp.')) ?>
 					</li>
 					<li>
 						<?php print $form->input('expiry', array('id' => 'time', 'label' => 'Time', 'class' => 'chzn-select', 'options' => $expires)) ?>

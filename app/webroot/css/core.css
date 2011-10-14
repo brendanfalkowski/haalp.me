@@ -411,6 +411,10 @@ section#ask textarea {
 	width: 754px;
 }
 
+textarea::-webkit-input-placeholder {
+	color:#00ff00;
+}
+
 section#ask select {
 	height:38px;
 	border:1px solid #ccc;
