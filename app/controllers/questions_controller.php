@@ -38,10 +38,10 @@ class QuestionsController extends AppController {
 				$this->data['Question']['hash'] = $this->_hash($this->data['Question']['question']);
 				$this->data['Question']['expiry'] = date('Y-m-d H:i:s', strtotime($this->data['Question']['expiry']));
 				if ($this->Question->save($this->data)) {
-					$this->Session->SetFlash('Successfully added question');
+					$this->Session->setFlash('Successfully added question');
 					$this->redirect('/questions/view/' . $this->Question->id . '/' . $this->data['Question']['hash']);
 				} else {
-					$this->Session->SetFlash('Failed to save question', null, null, 'error');
+					$this->Session->setFlash('Failed to save question', null, null, 'error');
 				}	
 			}
 		}
@@ -97,7 +97,10 @@ class QuestionsController extends AppController {
 		if (!$id) {
 			$this->redirect('/');
 		}
-		$question = $this->Question->findById($id);
+		$question = $this->Question->find('first', array(
+			'contain' => array('Comment' => array('order' => 'created DESC')),
+			'conditions' => array('Question.id' => $id)
+		));
 		if ($hash) {
 			if ($hash != $question['Question']['hash']) {
 				$this->redirect('/');
